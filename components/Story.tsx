@@ -1,7 +1,7 @@
 import React from "react";
 import Marquee from "./ui/marquee";
 import { BorderBeam } from "./ui/border-beam";
-import TypingAnimation from "./ui/typing-animation";
+
 import WordPullUp from "./ui/word-pull-up";
 
 function Story() {

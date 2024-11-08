@@ -1,10 +1,7 @@
 import React from "react";
-import SparklesText from "./ui/sparkles-text";
-import AnimatedGridPattern from "./ui/animated-grid-pattern";
-import { cn } from "@/lib/utils";
+
 import GradualSpacing from "./ui/gradual-spacing";
-import FlickeringGrid from "./ui/flickering-grid";
-import RetroGrid from "./ui/retro-grid";
+
 import Meteors from "./ui/meteors";
 
 function Main() {

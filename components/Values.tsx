@@ -1,10 +1,9 @@
-import Image from "next/image";
 import { FaLock, FaThumbsUp } from "react-icons/fa";
 import { GoStack } from "react-icons/go";
 import { IoEyeOutline } from "react-icons/io5";
 import { LuRocket } from "react-icons/lu";
 import { MdOutlinePeopleAlt } from "react-icons/md";
-import ShinyButton from "./ui/shiny-button";
+
 import clsx from "clsx";
 import { BentoCard, BentoGrid } from "./ui/bento-grid";
 

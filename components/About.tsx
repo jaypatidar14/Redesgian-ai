@@ -1,11 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 
-import Journey from "./Timeline";
 import Footer from "./Footer";
 import Story from "./Story";
 import Values from "./Values";
-import Culture from "./Culture";
+
 import Main from "./Main";
 import TeamGrid from "./TeamExperts";
 import WhatWeDo from "./WhatWeDo";
