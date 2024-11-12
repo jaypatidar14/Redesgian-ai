@@ -61,6 +61,27 @@ body {
     --chart-5: 340 75% 55%;
   }
 }
+.fixed-size {
+  object-fit: contain; /* Ensures the 3D model fits within the fixed container without distortion */
+}
+/* Add this to your globals.css */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-typewriter {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typewriter 4s steps(40) 1s 1 normal both;
+}
+
 
 @layer base {
   * {
@@ -69,4 +90,10 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+.fixed-size {
+  width: 100%; /* Full width */
+  max-width: 100%; /* Maximum width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover for responsive resizing */
 }

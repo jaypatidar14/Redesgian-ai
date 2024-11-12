@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import Story from "./Story";
 import Values from "./Values";
 
-import Main from "./Main";
+// import Main from "./Main";
 import TeamGrid from "./TeamExperts";
 import WhatWeDo from "./WhatWeDo";
 import StepsAnimation from "./HowItWorks";
@@ -14,7 +14,7 @@ const About: React.FC = () => {
   return (
     <div className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 ">
       {/* Top Section */}
-      <Main />
+      {/* <Main /> */}
 
       {/* Our Story */}
       <Story />
