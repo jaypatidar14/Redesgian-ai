@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
 import { cn } from "@/lib/utils";
 
 interface TypingAnimationProps {
@@ -16,13 +15,14 @@ export default function TypingAnimation({
   className,
 }: TypingAnimationProps) {
   const [displayedText, setDisplayedText] = useState<string>("");
-  const [i, setI] = useState<number>(0);
 
   useEffect(() => {
+    let i = 0;  // Local variable to track the index
+
     const typingEffect = setInterval(() => {
       if (i < text.length) {
-        setDisplayedText(text.substring(0, i + 1));
-        setI(i + 1);
+        setDisplayedText((prev) => prev + text.charAt(i));
+        i++;
       } else {
         clearInterval(typingEffect);
       }
@@ -31,16 +31,16 @@ export default function TypingAnimation({
     return () => {
       clearInterval(typingEffect);
     };
-  }, [duration, i]);
+  }, [text, duration]); // Only depend on `text` and `duration`
 
   return (
     <h1
       className={cn(
         "font-display text-center text-4xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm",
-        className,
+        className
       )}
     >
-      {displayedText ? displayedText : text}
+      {displayedText || text}
     </h1>
   );
 }
