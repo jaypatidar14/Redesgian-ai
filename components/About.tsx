@@ -3,7 +3,7 @@ import React from "react";
 
 import Footer from "./Footer";
 import Story from "./Story";
-import Values from "./Values";
+
 
 // import Main from "./Main";
 import TeamGrid from "./TeamExperts";
@@ -20,7 +20,7 @@ const About: React.FC = () => {
       <Story />
 
       {/* Our Values */}
-      <Values />
+     
 
       <WhatWeDo />
 
