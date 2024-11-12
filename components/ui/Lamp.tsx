@@ -20,9 +20,9 @@ export function LampDemo() {
           Our Story
         </h2>
         <div className="text-white font-thin dark:text-gray-400 max-w-3xl mx-auto py-2 md:py-4 text-2xl mb-8">
-          "We not only make the world's most comfortable hammocks, but through
+          &quot;We not only make the world's most comfortable hammocks, but through
           training and sustainable job creation, we empower our weavers. We are
-          also working on AI solutions to help humans solve daily tasks."
+          also working on AI solutions to help humans solve daily tasks.&quot;
         </div>
       </motion.h1>
     </LampContainer>
