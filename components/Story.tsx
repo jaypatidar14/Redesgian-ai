@@ -1,39 +1,39 @@
 import React from "react";
 import Marquee from "./ui/marquee";
 import { BorderBeam } from "./ui/border-beam";
-import TestimonialCarousel from "./TestimonialCarousel";
-import WordPullUp from "./ui/word-pull-up";
+import { Infinite } from "./ui/Infinite";
+
 import SaasflyBanner from "./SaaflyBanner";
-function Story() {
+import { GoogleGeminiEffect } from "../components/ui/GoogleGeminiEffect";
+import { LampDemo } from "./ui/Lamp";
+
+function Story(): React.JSX.Element {
   return (
     <div className="bg-black">
       {/* Story section */}
-      <section className="bg-black text-center md:py-20 py-8 my-4">
+      <GoogleGeminiEffect pathLengths={[]} />
+    
+      <section className="text-center bg-black py-12 md:py-15 my-4">
         {/* Story title */}
-        <h2 className="text-2xl font-bold font-sans text-violet-700 py-4 md:py-5">
-          Our Story
-        </h2>
-        <SaasflyBanner />
-        {/* WordPullUp component with story text */}
-        <WordPullUp
-          className="text-gray-500 font-sans dark:text-gray-400 max-w-3xl mx-auto py-1 md:py-3 text-3xl"
-          words="We not only make the world's most comfortable hammocks, but through
-          training and sustainable job creation, we empower our weavers and
-          their families to break the cycle of poverty and build a brighter
-          future."
-        />
-        
-        {/* Testimonial carousel */}
-        <TestimonialCarousel />
+        <LampDemo />
+        <Infinite items={[{  id: 1,
+        quote: "This is an example quote.",
+        name: "John Doe",
+        title: "CEO",
+        imageUrl: "https://i.pinimg.com/236x/8e/e5/ed/8ee5edf8c3745ae78d92b3e1c57ca289.jpg"  }, { id: 2, quote: "this is quote of  jay ", name: "Jay patidar", title: "CFO", imageUrl:"https://i.pinimg.com/236x/8e/e5/ed/8ee5edf8c3745ae78d92b3e1c57ca289.jpg" }]} />
       </section>
-      
-      {/* Optional components such as Marquee and BorderBeam */}
-      <Marquee className="text-white" text="See what our customers are saying!" />
-      <BorderBeam className="my-8" />
-
+      <section>
+   
+      </section>
+      <SaasflyBanner />
+      <section className="p-6">
+        {/* Optional components such as Marquee and BorderBeam */}
+        <Marquee className="text-white py-4" text="See what our customers are saying!" />
+        <BorderBeam className="my-8" />
+      </section>
     </div>
+
   );
 }
 
 export default Story;
-

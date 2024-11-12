@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#000000] text-white">
       {/* Transparent Sticky Navigation Bar */}
-      <header className="fixed top-0 left-0 right-0 z-40">
+      <header className="fixed top-0 left-0 right-0 z-40 space-x-2">
         <nav className="relative">
           <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto backdrop-blur-lg">
             {/* Logo */}
@@ -33,9 +33,7 @@ const Navbar: React.FC = () => {
               <Link href="/docs" className="text-gray-300 hover:text-white">
                 Docs
               </Link>
-              <Link href="/pricing" className="text-gray-300 hover:text-white">
-                Pricing
-              </Link>
+              
             </div>
 
             {/* Auth Buttons */}
